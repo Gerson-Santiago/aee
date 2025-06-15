@@ -1,0 +1,29 @@
+# Node modules e lockfile
+node_modules/
+package-lock.json
+
+# Variáveis de ambiente
+.env
+
+# VS Code
+.vscode/
+
+# Prisma
+generated/
+prisma/migrations/
+
+# Ignora só os CSV originais (que não terminam com _headers.csv)
+csv/*.csv
+!csv/*_headers.csv
+!csv/csv.txt
+!csv/extract_headers.sh
+
+
+
+# Credenciais sensíveis (Google OAuth 2.0)
+credentials/client_secret.json
+
+# Builds, logs e caches
+dist/
+build/
+*.log
