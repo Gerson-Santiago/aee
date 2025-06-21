@@ -1,0 +1,33 @@
+# Node modules e arquivos de lock
+node_modules/
+package-lock.json
+
+# Variáveis de ambiente sensíveis
+.env
+
+# VS Code (configurações locais)
+.vscode/
+
+# Prisma - diretórios gerados e migrações
+generated/
+prisma/migrations/
+
+# CSV originais (somente ignorar os que não são _headers.csv)
+csv/*.csv
+!csv/*_headers.csv
+!csv/csv.txt
+!csv/extract_headers.sh
+
+# Credenciais sensíveis (Google OAuth 2.0)
+credentials/client_secret.json
+
+# Builds, logs e caches
+dist/
+build/
+*.log
+backend.log
+
+# Scripts usados para issues (não versionar)
+create_issues.sh
+create_labels.sh
+add_issues_to_project.sh
