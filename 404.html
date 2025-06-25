@@ -1,16 +1,8 @@
-<!-- frontend-aee-vite/public/404.html -->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Redirecionando...</title>
-    <script>
-      // Redireciona qualquer rota quebrada para o index.html (SPA fallback)
-      const path = window.location.pathname.replace('/aee', '');
-      window.location.replace('/aee/index.html?redirect=' + encodeURIComponent(path));
-    </script>
+    <meta http-equiv="refresh" content="0; URL=./index.html" />
   </head>
   <body>
-    <p>Redirecionando para o sistema AEE...</p>
   </body>
 </html>
